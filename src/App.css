@@ -142,6 +142,7 @@ body{
   cursor: pointer;
   box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
   transition: all 0.25s;
+  filter: drop-shadow(5px 5px 4px #fff );
 }
 .pokeCard:hover {
   transform: translateY(-10px);
@@ -163,11 +164,14 @@ body{
 .infoCard {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  justify-items: flex-start;
+  justify-items: center;
   align-items: center;
   gap: 5px 20px;
   margin-top: 10px;
   height: 130px;
+}
+.infoCard .b2{
+  color:#c91a1a;
 }
 .header {
   width: 100%;
