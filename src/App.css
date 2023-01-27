@@ -166,7 +166,6 @@ body{
   transition-duration: 5s;
   filter: drop-shadow( 5px 5px 4px black);
 }
-
 .pokeCard h2 {
   margin-bottom: 10px;
 }
@@ -236,13 +235,17 @@ body{
   padding-bottom: 40px;
 }
 .baseInfo {
-  background-color: rgba(255, 255, 255, 0.493);
   width: 80%;
   border-radius: 20px;
   margin-bottom: 20px;
   padding-bottom: 20px;
   margin-top: 120px;
-  color: #000000;
+  background: rgba(255,255,255,0.1);
+  color: rgb(11, 2, 58);
+  border: 4px solid rgba(255, 225, 225, 0.5);
+  filter: drop-shadow(5px 5px 4px #fff );
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
 }
 .baseInfo h2 {
   margin-top: 20px;
@@ -252,8 +255,8 @@ body{
   font-size: 18px;
 }
 .baseInfo hr {
-  background-color: black;
-  height: 2px;
+  background-color: rgba(255, 225, 225, 0.5);
+  height: 5px;
   border: none;
 }
 .pokemonPicture {
@@ -265,33 +268,41 @@ body{
   justify-content: center;
 }
 .abilities {
-  background-color: rgba(255, 255, 255, 0.493);
   width: 38.8%;
   margin-left: 30px;
   border-radius: 20px;
   margin-right: 10px;
-  color: #000000;
+  background: rgba(255,255,255,0.1);
+  color: rgb(11, 2, 58);
+  border: 4px solid rgba(255, 225, 225, 0.5);
+  filter: drop-shadow(5px 5px 4px #fff );
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
 }
 .type {
-  background-color: rgba(255, 255, 255, 0.493);
   width: 38.8%;
   margin-right: 30px;
   border-radius: 20px;
   margin-left: 10px;
-  color: #000000;
+  background: rgba(255,255,255,0.1);
+  color: rgb(11, 2, 58);
+  border: 4px solid rgba(255, 225, 225, 0.5);
+  filter: drop-shadow(5px 5px 4px #fff );
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
 }
 .abilities h2 {
   margin: 10px;
   font-size: 28px;
 }
 .abilities hr {
-  background-color: black;
-  height: 2px;
+  background-color: rgba(255, 225, 225, 0.5);
+  height: 5px;
   border: none;
 }
 .type hr {
-  background-color: black;
-  height: 2px;
+  background-color: rgba(255, 225, 225, 0.5);
+  height: 5px;
   border: none;
 }
 .type h2 {
@@ -306,6 +317,9 @@ body{
 .divition1 p {
   margin: 10px 20px;
 }
+.divition1 .b2{
+  color: rgba(255, 225, 225);
+}
 .divition2 {
   display: flex;
   justify-content: center;
@@ -313,6 +327,7 @@ body{
 .divition2 p {
   margin: 10px 20px;
   font-size: 18px;
+  color: rgba(255, 225, 225);
 }
 .divition3 {
   display: flex;
@@ -321,6 +336,7 @@ body{
 .divition3 p {
   margin: 10px 20px;
   font-size: 18px;
+  color: rgba(255, 225, 225);
 }
 .goBackButton {
   width: 80%;
@@ -423,7 +439,7 @@ gap: 130px;
   justify-content: center;
 }
 .principalCardFilter {
-  margin-top: 80px;
+  padding-bottom: 100px;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
@@ -454,17 +470,21 @@ gap: 130px;
   height: 40px;
 }
 .moves {
-  background-color: rgba(255, 255, 255, 0.493);
   width: 80%;
   border-radius: 20px;
   margin-bottom: 20px;
   padding-bottom: 20px;
   margin-top: 20px;
-  color: #000000;
+  background: rgba(255,255,255,0.1);
+  color: rgb(11, 2, 58);
+  border: 4px solid rgba(255, 225, 225, 0.5);
+  filter: drop-shadow(5px 5px 4px #fff );
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
 }
 .pokeMoves hr {
-  background-color: black;
-  height: 2px;
+  background-color: rgba(255, 225, 225, 0.5);
+  height: 5px;
   border: none;
   margin-bottom: 10px;
 }

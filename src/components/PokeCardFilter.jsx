@@ -20,7 +20,7 @@ const PokeCardFilter = ({typeUrl}) => {
 
   return (
     <article className='pokeCard' onClick={clickCard}>
-        <img src={pokemon?.sprites.other['official-artwork'].front_default} alt="" />
+        <img className='pok' src={pokemon?.sprites.other['official-artwork'].front_default} alt="" />
             <h2>{pokemon?.name.toUpperCase()}</h2>
             <hr />
             <div className='infoCard'>

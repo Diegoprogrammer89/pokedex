@@ -15,7 +15,7 @@ const InputHome = ({setIsLogged}) => {
     const submit = data => {
         dispatch(setName(data.nameUser))
         reset({
-            nameUser: ''
+            nameUser: '',
         })
         navigate('/pokedex')
     }
@@ -25,7 +25,7 @@ const InputHome = ({setIsLogged}) => {
 
   return (
     <form onSubmit={ handleSubmit (submit) }>
-        <input type="text" placeholder='Please, enter your name' { ...register('nameUser') }/>
+        <input type="text" placeholder='Please, enter your name' { ...register('nameUser', { required: true } ) }/>
         <button onClick={clickLogged}>Ok!</button>
     </form>
   )
