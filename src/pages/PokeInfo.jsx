@@ -17,7 +17,7 @@ const PokeInfo = () => {
           .catch(error => console.log(error))
   }, [id])
 
-  // console.log(pokeInfo);
+
 
   const navigate = useNavigate ()
   const clickBack = () => navigate ('/pokedex')
@@ -29,11 +29,11 @@ const PokeInfo = () => {
           <img src={pokeInfo?.sprites.other['official-artwork'].front_default} alt="pokemon picture" className='pokemonPicture'/>
         </div>
         <hr />
-        <h2><b>Name: </b>{pokeInfo?.name}</h2>
+        <h2>{pokeInfo?.name.toUpperCase()}</h2>
         <div className='divition1'>
-          <p><b>Weight: </b>{pokeInfo?.weight}</p>
-          <p><b>Height: </b>{pokeInfo?.height}</p>
-          <p><b>Base Experience: </b>{pokeInfo?.base_experience}</p>
+        <p><b>Weight</b><br /><b className='b2'>{pokeInfo?.weight}</b></p>
+          <p><b>Height</b><br /><b className='b2'>{pokeInfo?.height}</b></p>
+          <p><b>Base Experience</b><br /><b className='b2'>{pokeInfo?.base_experience}</b></p>
         </div>
       </div>
       <div className='abilities'>
@@ -56,7 +56,7 @@ const PokeInfo = () => {
           <PokeMoves pokeInfo={pokeInfo}/>
       </div>
       <div className='goBackButton'>
-        <button onClick={clickBack} className='goBack'>Go back!</button>
+        <button onClick={clickBack} className='goBack'>Back!</button>
       </div>
     </article>
   )

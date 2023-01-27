@@ -101,7 +101,6 @@ body{
   margin-bottom: 20px;
 }
 .form input {
-  border: none;
   border-radius: 20px;
   width: 35%;
   min-width: 250px;
@@ -109,8 +108,9 @@ body{
   height: 35px;
   padding: 0px 15px;
   font-size: 20px;
-  color:black;
-
+  background-color: #332626;
+  color:white;
+  border: solid 1px;
   outline: none;
 }
 .form button {
@@ -119,6 +119,10 @@ body{
   cursor: pointer;
   border: none;
   font-size: 20px;
+  background-color: #332626;
+  color: white;
+  border: solid 1px;
+  height: 40px;
 }
 .principalCard {
   display: flex;
@@ -131,18 +135,20 @@ body{
 .principalCard .header h3{
   padding-top: 10px;
 }
-.pokeCard {
-  background-color: rgba(255, 255, 255, 0.493);
-  color: #000000;
+.pokeCard { 
+  background: rgba(255,255,255,0.1);
+  color: rgb(11, 2, 58);
   max-width: 330px;
   padding: 20px;
   margin: 20px;
   margin-bottom: 60px;
   border-radius: 20px;
   cursor: pointer;
-  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
-  transition: all 0.25s;
+  border: 4px solid rgba(255, 225, 225, 0.5);
+  transition: 0.25s;
   filter: drop-shadow(5px 5px 4px #fff );
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);  
 }
 .pokeCard:hover {
   transform: translateY(-10px);
@@ -151,14 +157,22 @@ body{
 .pokeCard img {
   width: 200px;
   max-height: 180px;
-  margin-top: -80px;
+  margin-top: -80px; 
 }
+.pokeCard:hover .pok {
+  position: relative;
+  bottom: 30px;
+  left: 10px;
+  transition-duration: 5s;
+  filter: drop-shadow( 5px 5px 4px black);
+}
+
 .pokeCard h2 {
   margin-bottom: 10px;
 }
 .pokeCard hr {
-  background-color: #000000;
-  height: 2px;
+  background-color: rgba(255, 225, 225, 0.5);
+  height: 5px;
   border: none;
 }
 .infoCard {
@@ -171,7 +185,7 @@ body{
   height: 130px;
 }
 .infoCard .b2{
-  color:#c91a1a;
+  color:rgb(255, 255, 255);
 }
 .header {
   width: 100%;
@@ -196,7 +210,7 @@ body{
   justify-content: center;
 }
 .filter input {
-  border: solid 1px #000000;
+  border: solid 1px white;
   border-radius: 10px;
   width: 30%;
   min-width: 200px;
@@ -205,6 +219,8 @@ body{
   padding: 0px 15px;
   font-size: 20px;
   outline: none;
+  background-color: #332626;
+  color: white;
 }
 .filter button {
   padding: 2px 10px;
@@ -236,7 +252,7 @@ body{
   font-size: 18px;
 }
 .baseInfo hr {
-  background-color: #812323;
+  background-color: black;
   height: 2px;
   border: none;
 }
@@ -269,12 +285,12 @@ body{
   font-size: 28px;
 }
 .abilities hr {
-  background-color: #812323;
+  background-color: black;
   height: 2px;
   border: none;
 }
 .type hr {
-  background-color: #812323;
+  background-color: black;
   height: 2px;
   border: none;
 }
@@ -356,7 +372,8 @@ body{
   width: 50px;
   border-radius: 10px;
   border: solid 1px;
-  
+  background-color: #332626;
+  color: white;
 }
 .pagination p {
   margin-left: 10px;
@@ -393,7 +410,9 @@ gap: 130px;
   cursor: pointer;
   border: solid 1px;
   font-size: 16px;
+  margin: 0;
   margin-left: 20px;
+  height: 40px;
 }
 .inputSelector {
   display: flex;
@@ -432,6 +451,7 @@ gap: 130px;
   font-size: 16px;
   margin-left: 20px;
   margin-bottom: 40px;
+  height: 40px;
 }
 .moves {
   background-color: rgba(255, 255, 255, 0.493);
@@ -443,7 +463,7 @@ gap: 130px;
   color: #000000;
 }
 .pokeMoves hr {
-  background-color: #812323;
+  background-color: black;
   height: 2px;
   border: none;
   margin-bottom: 10px;
@@ -453,6 +473,7 @@ gap: 130px;
   flex-wrap: wrap;
   padding-left: 20px;
   padding-right: 20px;
+  justify-content: center;
 }
 .pokeMoves h2 {
   margin-top: 20px;
@@ -461,6 +482,15 @@ gap: 130px;
 }
 .pokeMoves p {
   font-size: 18px;
+}
+button{
+  background-color: #332626;
+  margin: 10px;
+  padding: 10px 15px;
+  color: white;
+  border-radius: 10px;
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+  transition: all 0.25s;
 }
 .bg-move {
   background-color: #332626;
